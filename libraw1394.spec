@@ -5,7 +5,7 @@
 %define keepstatic 1
 Name     : libraw1394
 Version  : 2.1.2
-Release  : 5
+Release  : 6
 URL      : https://www.kernel.org/pub/linux/libs/ieee1394/libraw1394-2.1.2.tar.gz
 Source0  : https://www.kernel.org/pub/linux/libs/ieee1394/libraw1394-2.1.2.tar.gz
 Summary  : Streaming library for IEEE1394
@@ -88,7 +88,7 @@ unset http_proxy
 unset https_proxy
 unset no_proxy
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1587265532
+export SOURCE_DATE_EPOCH=1587267988
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -119,7 +119,7 @@ unset no_proxy
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1587265532
+export SOURCE_DATE_EPOCH=1587267988
 rm -rf %{buildroot}
 %make_install
 
